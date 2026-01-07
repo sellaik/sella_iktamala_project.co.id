@@ -69,13 +69,16 @@ export default function KategoriPopular() {
       </div>
 
       {/* Grid */}
-      <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {categories.map((item, index) => (
           <div
             key={index}
-            className="bg-white rounded-2xl p-9 flex items-center gap-8
-                       shadow-md hover:shadow-xl transition-all duration-300
-                       hover:-translate-y-1 cursor-pointer"
+            className="
+              bg-white rounded-2xl px-8 py-7
+              shadow-[0_8px_24px_rgba(0,0,0,0.08)]
+              hover:shadow-[0_12px_32px_rgba(0,0,0,0.12)]
+              transition-all duration-300
+              hover:-translate-y-1"
           >
             {/* Icon */}
             <div className="w-15 h-15 bg-[#FBD3A8] rounded-xl flex items-center justify-center">
