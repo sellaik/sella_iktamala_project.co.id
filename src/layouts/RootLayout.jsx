@@ -1,15 +1,21 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { Outlet } from "react-router";
 
 function RootLayout() {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
+      {/* HEADER */}
       <Header />
-      <main>
+
+      {/* MAIN CONTENT */}
+      <main className="flex-1">
         <Outlet />
       </main>
-      <footer>Created With Love</footer>
-    </>
+
+      {/* FOOTER */}
+      <Footer />
+    </div>
   );
 }
 
